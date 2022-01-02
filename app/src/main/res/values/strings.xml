@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">StudentManagement</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">当前什么都没有</string>
+</resources>
