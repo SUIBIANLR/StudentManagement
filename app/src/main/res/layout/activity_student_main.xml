@@ -10,7 +10,6 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="查看成绩"
-        android:textColor="@color/purple_200"
         android:textSize="24dp"></Button>
 
     <Button
@@ -18,7 +17,6 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="查看与修改基本信息"
-        android:textColor="@color/purple_200"
         android:textSize="24dp"></Button>
 
     <fragment

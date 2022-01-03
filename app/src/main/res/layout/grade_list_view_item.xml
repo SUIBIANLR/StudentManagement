@@ -5,30 +5,26 @@
     android:orientation="horizontal">
 
     <TextView
-        android:layout_width="100dp"
+        android:id="@+id/subject"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:id="@+id/subject">
-    </TextView>
+        android:textSize="24dp"></TextView>
 
     <TextView
-        android:layout_width="100dp"
+        android:id="@+id/score"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:id="@+id/score">
-    </TextView>
+        android:textSize="24dp"></TextView>
 
     <TextView
-        android:layout_width="100dp"
+        android:id="@+id/term"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:id="@+id/term">
-    </TextView>
+        android:textSize="24dp"></TextView>
 
     <TextView
-        android:layout_width="100dp"
+        android:id="@+id/note"
+        android:layout_width="80dp"
         android:layout_height="wrap_content"
-        android:textSize="24dp"
-        android:id="@+id/note">
-    </TextView>
+        android:textSize="24dp"></TextView>
 </LinearLayout>

@@ -17,6 +17,10 @@ public class Grade {
         this.note = note;
     }
 
+    public Grade(){
+
+    }
+
     public void setNote(String note) {
         this.note = note;
     }

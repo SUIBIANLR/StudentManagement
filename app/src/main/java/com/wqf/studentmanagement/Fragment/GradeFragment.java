@@ -9,6 +9,7 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +48,8 @@ public class GradeFragment extends Fragment {
     ListView gradesListView;
 
     List<Grade> grades = new ArrayList<>();
-    long sno=3119005434L;
+    long sno;
+    String TAG="GradeFragment";
 
     public GradeFragment() {
         // Required empty public constructor
@@ -84,6 +86,9 @@ public class GradeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         //首先从数据库中获取该学生的成绩信息
+        Log.d(TAG, "onCreateView: 准备接收参数");
+        sno=getArguments().getLong("studentNumber");
+        Log.d(TAG, "onCreateView: 从activity得到的sno为："+sno);
         grades = getAllGrades(sno);
 
         // Inflate the layout for this fragment
@@ -96,7 +101,7 @@ public class GradeFragment extends Fragment {
 
     private ArrayList<Grade> getAllGrades(long sno){
         ArrayList<Grade> grades = new ArrayList<>();
-        Grade grade = null;
+        Grade grade= new Grade();
         SQLiteDatabase db = myDBHelper.getWritableDatabase();
         Cursor cursor = db.rawQuery("select * from student_grade where sno = ?", new String[]{sno+""});
 

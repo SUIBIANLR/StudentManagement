@@ -83,7 +83,9 @@ public class MainActivity extends AppCompatActivity {
                 //根据identity的值跳转到相应的页面，若identity为学生，还需向下一页面传送userID
                 if (identity.equals("学生")) {
                     Intent intent = new Intent(this, StudentMainActivity.class);
-                    intent.putExtra("studentNumber", userID);
+                    Bundle bundle = new Bundle();
+                    bundle.putLong("studentNumber",userID);
+                    intent.putExtras(bundle);
                     startActivity(intent);
                 } else {
                     Intent intent = new Intent(this, TeacherMainActivity.class);

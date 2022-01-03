@@ -81,7 +81,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="登录"
-            android:textColor="@color/purple_200"
             android:textSize="24dp"></Button>
 
         <Button
@@ -90,7 +89,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="注册"
-            android:textColor="@color/purple_200"
             android:textSize="24dp"></Button>
 
         <Button
@@ -99,7 +97,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:text="测试的后门，用于直接登录3119005434"
-            android:textColor="@color/purple_200"
             android:textSize="24dp"></Button>
 
     </LinearLayout>
